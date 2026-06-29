@@ -1,0 +1,73 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+<meta charset="UTF-8">
+<meta name="viewport" content="width=device-width, initial-scale=1.0">
+<title>Loading...</title>
+
+<link rel="stylesheet" href="style.css">
+
+<script>
+setTimeout(function(){
+window.location.href="index.html";
+},20000);
+</script>
+
+</head>
+
+<body>
+  <script>
+
+const messages=[
+
+"🎁 Preparing Your Surprise...",
+
+"✨ Collecting Beautiful Memories...",
+
+"💌 Writing Your Special Letter...",
+
+"🎂 Baking Your Birthday Cake...",
+
+"🎈 Decorating Everything...",
+
+"🎆 Almost Ready...",
+
+"❤️ Surprise is Ready!"
+
+];
+
+let i=0;
+
+setInterval(function(){
+
+if(i<messages.length){
+
+document.getElementById("loadingText").innerHTML=messages[i];
+
+i++;
+
+}
+
+},1400);
+
+</script>
+
+<div class="loadingScreen">
+
+<div class="logo">🎁</div>
+
+<h1>Birthday Surprise</h1>
+<p id="loadingText">🎁 Preparing Your Surprise...</p>
+
+<div class="loader">
+<div class="bar"></div>
+</div>
+
+<p class="waitText">
+Please Wait...
+</p>
+
+</div>
+
+</body>
+</html>
